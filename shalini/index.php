@@ -641,9 +641,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message" name="message"></textarea>
 										</div>
 										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message" name="submit">
+											<input type="button" class="btn btn-primary btn-send-message" value="Send Message" name="submit">
 										</div>
-										<div class="display">
+								
+									</form>
+									<div class="display">
                         <?php
                        
                         if($_GET['success'] ==1) {
@@ -656,8 +658,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         
                         ?>
               </div>
-									</form>
-									
 								</div>
 								
 							</div>
