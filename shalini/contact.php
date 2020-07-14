@@ -8,7 +8,7 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)){ 
-        header("Location:https://omnifood-shalini.herokuapp.com/index.php?success=-1#form");
+        header("Location:https://shalini-portfolio.herokuapp.com/index.php?success=-1#form");
         exit;
     }
 
