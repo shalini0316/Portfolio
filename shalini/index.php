@@ -643,8 +643,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 										<div class="form-group">
 											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message" name="submit">
 										</div>
-									</form>
-									 <div class="display">
+										<div class="display">
                         <?php
                        
                         if($_GET['success'] ==1) {
@@ -657,6 +656,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         
                         ?>
               </div>
+									</form>
+									
 								</div>
 								
 							</div>
