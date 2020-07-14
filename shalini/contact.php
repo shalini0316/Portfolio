@@ -1,19 +1,35 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "shalini.jayakumar03@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+<?php
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // Get the form fields, removes html tags and whitespace.
+    $name = strip_tags(trim($_POST["name"]));
+    $name = str_replace(array("\r","\n"),array(" "," "),$name);
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $message = trim($_POST["message"]);
+
+    // Check the data.
+    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)){ 
+        header("Location:https://omnifood-shalini.herokuapp.com/index.php?success=-1#form");
+        exit;
     }
+
+    // Set the recipient email address. Update this to YOUR desired email address.
+    $recipient = "shalini.jayakumar03@gmail.com";
+
+    // Set the email subject.
+    $subject = "New contact from $name";
+
+    // Build the email content.
+    $email_content = "Name: $name\n";
+    $email_content .= "Email: $email\n\n";
+    $email_content .= "Message:\n$message\n";
+
+    // Build the email headers.
+    $email_headers = "From: $name <$email>";
+
+    // Send the email.
+    mail($recipient, $subject, $email_content, $email_headers);
+    
+    // Redirect to the index.html page with success code
+    header("Location: https://omnifood-shalini.herokuapp.com/index.php?success=1#form");
+
 ?>
