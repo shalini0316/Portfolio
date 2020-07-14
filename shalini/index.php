@@ -628,9 +628,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 										<div class="form-group">
 											<input type="text" class="form-control" placeholder="Name" name="first_name">
 										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Last Name" name="last_name">
-										</div>
+										
 										<div class="form-group">
 											<input type="text" class="form-control" placeholder="Email" name="email">
 										</div>
@@ -641,7 +639,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message" name="message"></textarea>
 										</div>
 										<div class="form-group">
-											<input type="button" class="btn btn-primary btn-send-message" value="Send Message" name="submit">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message" name="submit">
 										</div>
 								
 									</form>
