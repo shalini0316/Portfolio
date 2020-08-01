@@ -48,7 +48,34 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+<!-- Start of Async Drift Code -->
+<script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('idkeszcgpcwa');
+	</script>
+	<!-- End of Async Drift Code -->
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -168,7 +195,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
 										<h2>I am happy to know you <br>that 10+ projects done sucessfully!</h2>
-										<a href="#" class="btn-hire">Hire me</a>
+										<a href="mailto:shalini.jayakumar03@gmail.com." class="btn-hire">Hire me</a>
 									</div>
 								</div>
 							</div>
@@ -666,7 +693,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<i class="icon-globe-outline"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="#">shalini.jayakumar03@gmail.com</a></p>
+									<p><a href="mailto:shalini.jayakumar03@gmail.com.">shalini.jayakumar03@gmail.com</a></p>
 								</div>
 							</div>
 
@@ -708,6 +735,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
 									
+									<form action="https://formspree.io/myynoevr" method="POST">
+										
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name" name="name">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Email" name="email">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Subject" name="subject">
+											</div>
+											<div class="form-group">
+												<textarea  id="message" cols="30" rows="7" class="form-control" placeholder="Message" name="message"> </textarea>
+											</div>
+											<div class="form-group">
+												<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+											</div>
+										</form>
 								</div>
 								
 							</div>
