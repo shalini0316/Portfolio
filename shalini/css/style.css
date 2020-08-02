@@ -814,7 +814,7 @@ p{
 .colorlib-feature {
   text-align: left;
   width: 100%;
-  float: left;
+ 
   margin-bottom: 40px;
   position: relative; }
   .colorlib-feature .colorlib-icon {
@@ -838,11 +838,16 @@ p{
       height: 100px; }
       @media screen and (max-width: 1200px) {
         .colorlib-feature .colorlib-icon i {
-          font-size: 40px; } }
+          font-size: 40px; 
+      
+        } }
   .colorlib-feature .colorlib-text {
     padding-left: 120px;
-    width: 100%; }
-    .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
+    width: 100%; 
+   
+      
+  }
+  .colorlib-feature .colorlib-text h2, .colorlib-feature .colorlib-text h3 {
       margin: 0;
       padding: 0; }
     .colorlib-feature .colorlib-text h3 {
@@ -1402,6 +1407,7 @@ p{
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
     float: none;
+  
     width: 100%; } }
 
 .row-bottom-padded-lg {
