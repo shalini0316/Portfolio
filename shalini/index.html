@@ -48,34 +48,21 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-<!-- Start of Async Drift Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174182896-1"></script>
 <script>
-	"use strict";
-	
-	!function() {
-	  var t = window.driftt = window.drift = window.driftt || [];
-	  if (!t.init) {
-		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-		t.factory = function(e) {
-		  return function() {
-			var n = Array.prototype.slice.call(arguments);
-			return n.unshift(e), t.push(n), t;
-		  };
-		}, t.methods.forEach(function(e) {
-		  t[e] = t.factory(e);
-		}), t.load = function(t) {
-		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-		  var i = document.getElementsByTagName("script")[0];
-		  i.parentNode.insertBefore(o, i);
-		};
-	  }
-	}();
-	drift.SNIPPET_VERSION = '0.3.1';
-	drift.load('idkeszcgpcwa');
-	</script>
-	<!-- End of Async Drift Code -->
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174182896-1');
+</script>
+<script async>
+(function(w, d) { w.CollectId = "5f2584bcdf7e9e71498e7875"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script");
+ s.setAttribute("type", "text/javascript"); 
+ s.setAttribute("src", "https://collectcdn.com/launcher.js");
+  h.appendChild(s); })(window, document);
+  </script>
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -506,7 +493,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Inter trainee in cholamandalam</a> <span>2018(2months)</span></h2>
+					               	<h2><a href="#">Intern trainee in cholamandalam</a> <span>2018(2months)</span></h2>
 					                  <p>Underwent trainning in database management system and built a complete application using sql.</p>
 					               </div>
 					            </div>
